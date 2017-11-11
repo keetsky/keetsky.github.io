@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -493,7 +493,7 @@ pre,
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: 'PT Mono', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
   padding: 2px 4px;
@@ -1129,9 +1129,9 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lobster Two', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4fffff;
+  background: #6fb9ab;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2893,7 +2893,15 @@ embed {
   display: inline-block;
 }
 .header {
+  background-size: 1950px 600px;
+}
+.header {
   background: #eee;
+}
+.header-inner {
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  width: 700px;
 }
 .site-title {
   font-size: 40px;
@@ -3023,6 +3031,9 @@ di,
   font-size: 18px;
   color: #d94fd3;
 }
+.back-to-top {
+  background: #0d4a65;
+}
 .site-state {
   overflow: hidden;
   line-height: 1.6;
@@ -3101,6 +3112,33 @@ di,
   margin: 0 auto;
   width: 900px;
 }
+a {
+  border-bottom: 1px solid #fff;
+}
+.post-widgets {
+  padding-top: 0px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-top: 1px solid #fff;
+}
+.wp_rating {
+  margin-right: 0px;
+  padding-top: 10px;
+}
+.post-nav {
+  border-top: 1px solid #fff;
+}
+.post-nav-item .fa {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-size: 13px;
+}
+element.style {
+  color: #e80a3a;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;
 }
@@ -3132,6 +3170,13 @@ di,
   -ms-transform: rotate(360deg) scale(1.1);
   -o-transform: rotate(360deg) scale(1.1);
   transform: rotate(360deg) scale(1.1);
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
