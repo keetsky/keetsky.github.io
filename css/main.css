@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffccb;
+  background: #e59a78;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2962,7 +2962,7 @@ h1 {
 .posts-expand .post-eof {
   display: block;
   margin: 50px auto 50px;
-  width: 100%;
+  width: 0%;
   height: 1px;
   background: #ccc;
   text-align: center;
