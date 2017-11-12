@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6a5ce4;
+  background: #7fbd94;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2892,8 +2892,9 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
-.header {
-  background-size: 1950px 600px;
+body {
+  background: url("/images/beijing.jpg");
+  background-attachment: fixed;
 }
 .header {
   background: #eee;
