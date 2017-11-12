@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7fbd94;
+  background: #a6ff5c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2892,12 +2892,12 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
-body {
-  background: url("/images/beijing.jpg");
-  background-attachment: fixed;
-}
 .header {
-  background: #eee;
+  background: url("https://s1.ax1x.com/2017/11/12/sEzcT.jpg");
+}
+body {
+  background: url("https://s1.ax1x.com/2017/11/12/sSPJg.jpg");
+  background-attachment: fixed;
 }
 .header-inner {
   margin: 0 auto;
@@ -2916,7 +2916,7 @@ body {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: #eee;
+  background: #eee6e3;
   border-bottom: none;
 }
 .site-subtitle {
@@ -3152,7 +3152,7 @@ a {
   font-size: 13px;
 }
 element.style {
-  color: #e80a3a;
+  color: #2196f3;
   font-size: 13px;
   letter-spacing: 3px;
 }
