@@ -132,7 +132,7 @@
 <meta property="og:site_name" content="keetsky&#39;s Blog">
 <meta property="og:description" content="登高望远，多少岁月烟雨中;贴窗倾听，夜雨声烦杯对影。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-09T09:26:24.000Z">
+<meta property="og:updated_time" content="2017-11-13T02:16:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="登高望远，多少岁月烟雨中;贴窗倾听，夜雨声烦杯对影。">
@@ -411,6 +411,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -746,14 +757,6 @@ show_date_time();
 
   
 
-    
-      <script id="dsq-count-scr" src="https://NaNsay.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -769,8 +772,49 @@ show_date_time();
 
 
 
+  
 
 
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: '21081197',
+            repo: 'keetsky.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f2234912c1df1bc364f3ce39bccb5c6a73d51ab4',
+            
+                client_id: '3e0d530e7bfe6bd12b78'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 

@@ -125,17 +125,17 @@
 
 
 
-<meta name="description" content="关于我专注于机器学习及计算机视觉。QQ：573213516Email:keetsky@163.com">
+<meta name="description" content="关于我专注于机器学习及计算机视觉。QQ：573213516Email: keetsky@163.com">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://keetsky.top/about/index.html">
 <meta property="og:site_name" content="keetsky&#39;s Blog">
-<meta property="og:description" content="关于我专注于机器学习及计算机视觉。QQ：573213516Email:keetsky@163.com">
+<meta property="og:description" content="关于我专注于机器学习及计算机视觉。QQ：573213516Email: keetsky@163.com">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-10T05:53:33.000Z">
+<meta property="og:updated_time" content="2017-11-13T02:19:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我专注于机器学习及计算机视觉。QQ：573213516Email:keetsky@163.com">
+<meta name="twitter:description" content="关于我专注于机器学习及计算机视觉。QQ：573213516Email: keetsky@163.com">
 
 
 
@@ -386,7 +386,7 @@
       <div class="post-body">
         
         
-          <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>专注于机器学习及计算机视觉。<br>QQ：573213516<br>Email:keetsky@163.com</p>
+          <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>专注于机器学习及计算机视觉。<br>QQ：573213516<br>Email: keetsky@163.com</p>
 
         
       </div>
@@ -408,12 +408,9 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      
+        <div id="gitment-container"></div>
+      
     </div>
 
   
@@ -779,26 +776,6 @@ show_date_time();
 
   
 
-    
-      <script id="dsq-count-scr" src="https://NaNsay.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://keetsky.top/about/index.html';
-          this.page.identifier = 'about/index.html';
-          this.page.title = 'about';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://NaNsay.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -814,8 +791,49 @@ show_date_time();
 
 
 
+  
 
 
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: '21081197',
+            repo: 'keetsky.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f2234912c1df1bc364f3ce39bccb5c6a73d51ab4',
+            
+                client_id: '3e0d530e7bfe6bd12b78'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 

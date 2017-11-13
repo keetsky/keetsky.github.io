@@ -135,7 +135,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://keetsky.top/2017/11/13/test/bg1.jpeg">
 <meta property="og:image" content="https://s1.ax1x.com/2017/11/09/BOgeg.jpg">
-<meta property="og:updated_time" content="2017-11-11T05:33:21.000Z">
+<meta property="og:updated_time" content="2017-11-13T02:28:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试">
 <meta name="twitter:description" content="生命的意义是什么   你猜啊">
@@ -414,7 +414,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T08:30:13+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T11:12:49+08:00">
                 2017-11-13
               </time>
             
@@ -456,8 +456,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/13/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/13/test/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/13/test/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -639,8 +638,8 @@
 	    <span class="post-nav-divider"></span>
 	    <div class="post-nav-prev post-nav-item">
 	      
-		<a href="/2017/11/13/hello-world2/" rel="next" title="Hello World2">
-		  Hello World2 <i class="fa fa-chevron-right"></i>
+		<a href="/2017/11/13/hello-world/" rel="next" title="Hello World">
+		  Hello World <i class="fa fa-chevron-right"></i>
 		</a>
 	      
 	    </div>
@@ -710,12 +709,9 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      
+        <div id="gitment-container"></div>
+      
     </div>
 
   
@@ -1081,26 +1077,6 @@ show_date_time();
 
   
 
-    
-      <script id="dsq-count-scr" src="https://NaNsay.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://keetsky.top/2017/11/13/test/';
-          this.page.identifier = '2017/11/13/test/';
-          this.page.title = '测试';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://NaNsay.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -1116,8 +1092,49 @@ show_date_time();
 
 
 
+  
 
 
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: '21081197',
+            repo: 'keetsky.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f2234912c1df1bc364f3ce39bccb5c6a73d51ab4',
+            
+                client_id: '3e0d530e7bfe6bd12b78'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
