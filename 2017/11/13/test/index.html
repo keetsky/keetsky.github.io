@@ -414,7 +414,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T11:12:49+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T11:51:22+08:00">
                 2017-11-13
               </time>
             
@@ -456,7 +456,8 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/11/13/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/13/test/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/11/13/test/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -638,8 +639,8 @@
 	    <span class="post-nav-divider"></span>
 	    <div class="post-nav-prev post-nav-item">
 	      
-		<a href="/2017/11/13/hello-world/" rel="next" title="Hello World">
-		  Hello World <i class="fa fa-chevron-right"></i>
+		<a href="/2017/11/13/hello-world2/" rel="next" title="Hello World2">
+		  Hello World2 <i class="fa fa-chevron-right"></i>
 		</a>
 	      
 	    </div>
@@ -709,9 +710,12 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -1077,6 +1081,26 @@ show_date_time();
 
   
 
+    
+      <script id="dsq-count-scr" src="https://NaNsay.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://keetsky.top/2017/11/13/test/';
+          this.page.identifier = '2017/11/13/test/';
+          this.page.title = '测试';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://NaNsay.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -1089,10 +1113,6 @@ show_date_time();
   
 
 
-
-
-
-  
 
 
 
