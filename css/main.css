@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #36ffb5;
+  background: #55ffd4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3075,7 +3075,7 @@ h1 {
 .site-state-item-count {
   display: block;
   text-align: center;
-  color: #bb0606;
+  color: #3f51b5;
   font-weight: 600;
   font-size: 18px;
 }
