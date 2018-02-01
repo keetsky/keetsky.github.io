@@ -1978,7 +1978,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #71ffcf;
+  background: #36ffb5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2906,12 +2906,10 @@ embed {
   display: inline-block;
 }
 .header {
-  background-image: url("https://s1.ax1x.com/2017/11/12/sEzcT.jpg");
   background-color: #eee;
   background-size: cover;
 }
 body {
-  background: url("https://s1.ax1x.com/2017/11/12/sSPJg.jpg");
   background-attachment: fixed;
   background-color: transparent;
   background-size: cover;
@@ -2933,7 +2931,7 @@ body {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: #eee6e3;
+  background: #eee;
   border-bottom: none;
 }
 .site-subtitle {
