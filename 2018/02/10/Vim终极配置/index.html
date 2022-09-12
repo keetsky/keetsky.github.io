@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="VIM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="keetsky's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="图省事的配置github_web 经典配置 spf13-vim +YouCompleteMespf13-vim+neocomplete  (推荐)   spf13-vim 安装 1$ curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh  YouCompleteMe 安装安装教程网址2.1.1 在s">
+<meta name="keywords" content="VIM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim终极配置">
+<meta property="og:url" content="http://yoursite.com/2018/02/10/Vim终极配置/index.html">
+<meta property="og:site_name" content="keetsky&#39;s Blog">
+<meta property="og:description" content="图省事的配置github_web 经典配置 spf13-vim +YouCompleteMespf13-vim+neocomplete  (推荐)   spf13-vim 安装 1$ curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh  YouCompleteMe 安装安装教程网址2.1.1 在s">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-10T05:51:04.338Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vim终极配置">
+<meta name="twitter:description" content="图省事的配置github_web 经典配置 spf13-vim +YouCompleteMespf13-vim+neocomplete  (推荐)   spf13-vim 安装 1$ curl https://j.mp/spf13-vim3 -L &amp;gt; spf13-vim.sh &amp;amp;&amp;amp; sh spf13-vim.sh  YouCompleteMe 安装安装教程网址2.1.1 在s">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/02/10/Vim终极配置/"/>
+
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+  <title>Vim终极配置 | keetsky's Blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c332ec6b64577cc8ee03332f84f6085d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">keetsky's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Life Never Stop</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Blog
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            GuestBook
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/10/Vim终极配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="keetsky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/dd.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="keetsky's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Vim终极配置</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-10T20:03:19+08:00">
+                2018-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
+                    <span itemprop="name">ubuntu</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/10/Vim终极配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/02/10/Vim终极配置/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+         <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-calendar-o"></i>
+           </span>
+           <span class="post-meta-item-text">WordCount:</span>
+           <span class="post-count">1,981 words</span>
+           
+         </span>
+	  
+      <span class="post-time">
+	   &nbsp; | &nbsp;
+           <span class="post-meta-item-icon">
+             <i class="fa fa-calendar-o"></i>
+           </span>
+           <span class="post-meta-item-text">ReadTime:</span>
+           <span class="post-count">9 min</span>
+           
+         </span>
+
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="图省事的配置"><a href="#图省事的配置" class="headerlink" title="图省事的配置"></a>图省事的配置</h4><p><a href="https://github.com/sakurazhu/vim" target="_blank" rel="external">github_web</a></p>
+<h4 id="经典配置"><a href="#经典配置" class="headerlink" title="经典配置"></a>经典配置</h4><blockquote>
+<p>spf13-vim +YouCompleteMe<br>spf13-vim+neocomplete  (推荐)</p>
+</blockquote>
+<ol>
+<li><p>spf13-vim 安装</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl http<span class="variable">s:</span>//<span class="keyword">j</span>.mp/spf13-vim3 -L &gt; spf13-<span class="keyword">vim</span>.<span class="keyword">sh</span> &amp;&amp; <span class="keyword">sh</span> spf13-<span class="keyword">vim</span>.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>YouCompleteMe 安装<br><a href="https://www.bbsmax.com/A/LPdoMe6jJ3/" target="_blank" rel="external">安装教程网址</a><br><code>2.1.1</code> 在spf13中指定安装YouCompleteMe插件也很方便，只需要在文件~/.vimrc.before.local中添加下面一行</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">g:spf13_bundle_groups</span>=[<span class="string">'general'</span>, <span class="string">'youcompleteme'</span>] </span><br><span class="line">或 <span class="keyword">let</span> <span class="variable">g:spf13_bundle_groups</span>[<span class="string">'general'</span>, <span class="string">'writing'</span>, <span class="string">'neocomplcache'</span>, <span class="string">'programming'</span>, <span class="string">'php'</span>, <span class="string">'ruby'</span>, <span class="string">'python'</span>, <span class="string">'javascript'</span>, <span class="string">'html'</span>, <span class="string">'misc'</span>, <span class="string">'youcompleteme'</span>, ]</span><br><span class="line">或 在.vimrc 中加入 Bundle <span class="string">'Valloric/YouCompleteMe'</span></span><br></pre></td></tr></table></figure>
+<p>然后采用Vundle命令安装</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vim</span><br><span class="line">在vim中输入 </span><br><span class="line"><span class="symbol">:BundleInstall!</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>或<code>源码安装</code><br><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~<span class="string">/.vim/bundle</span></span><br><span class="line">git clone https:<span class="string">//github.com/Valloric/YouCompleteMe.git</span></span><br><span class="line"><span class="keyword">cd</span> YouCompleteMe</span><br><span class="line">git submodule update <span class="params">--init</span> <span class="params">--recursive</span></span><br><span class="line"><span class="string">./install.sh</span> <span class="params">--clang-completer</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p><code>2.1.2</code> 编译ycm_core.so</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~<span class="string">/.vim/bundle/YouCompleteMe/</span></span><br><span class="line"><span class="string">./install.py</span> <span class="params">--all</span> <span class="comment">#编译支持所有功能</span></span><br><span class="line">or</span><br><span class="line"><span class="string">./install.py</span> <span class="params">--clang-completer</span> <span class="comment">#只支持C/C++补全</span></span><br></pre></td></tr></table></figure>
+<p><code>2.1.3</code> YouCompleteMe配置<br>   <code>.vimr</code>或<code>.vimrc.local</code>配置添加<br><a href="http://howiefh.github.io/2015/05/22/vim-install-youcompleteme-plugin/" target="_blank" rel="external">参考网址</a><br><a href="https://zhuanlan.zhihu.com/p/33046090" target="_blank" rel="external">参考网址</a><br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">"</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:acp_enableAtStartup</span> = <span class="number">0</span></span><br><span class="line">            <span class="comment">" global conf which is needed to resolve name in system include</span></span><br><span class="line">            <span class="comment">" file or other  third-part include file</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_global_ycm_extra_conf</span> = <span class="string">'~/.vim/.ycm_extra_conf.py'</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_server_python_interpreter</span>=<span class="string">'/usr/bin/python'</span></span><br><span class="line">            <span class="comment">" enable completion from tags</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_collect_identifiers_from_tags_files</span> = <span class="number">1</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_seed_identifiers_with_syntax</span> = <span class="number">1</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_confirm_extra_conf</span> = <span class="number">0</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_cache_omnifunc</span>=<span class="number">0</span></span><br><span class="line">            <span class="keyword">let</span> <span class="variable">g:ycm_key_invoke_completion</span> = <span class="string">'&lt;C-;&gt;'</span></span><br><span class="line">           <span class="comment">" nnoremap &lt;F5&gt; :YcmForceCompileAndDiagnostics&lt;CR&gt;</span></span><br><span class="line">            <span class="keyword">nnoremap</span> <span class="symbol">&lt;leader&gt;</span>jd :YcmCompleter GoToDefinitionElseDeclaration<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"></span><br><span class="line"> 把nerdtree绑定到F5上</span><br><span class="line">            <span class="keyword">let</span> NERDTreeChDirMode = <span class="number">2</span></span><br><span class="line">            <span class="keyword">let</span> NERDTreeWinSize = <span class="number">30</span></span><br><span class="line">            <span class="keyword">nmap</span> <span class="symbol">&lt;F5&gt;</span>  :NERDTreeToggle<span class="symbol">&lt;CR&gt;</span> </span><br><span class="line"></span><br><span class="line">  缩进看起来一块一块的，比较难看，我习惯默认关闭它,可以通过<span class="symbol">&lt;Leader&gt;</span>ig来开启</span><br><span class="line">           <span class="keyword">let</span> <span class="variable">g:indent_guides_auto_colors</span> = <span class="number">0</span></span><br><span class="line">   </span><br><span class="line">   一般把tagbar绑在<span class="symbol">&lt;F6&gt;</span>上</span><br><span class="line">           <span class="keyword">nnoremap</span> <span class="symbol">&lt;F6&gt;</span> :TagbarToggle<span class="symbol">&lt;CR&gt;</span> </span><br><span class="line">           <span class="keyword">let</span> <span class="variable">g:tagbar_autoclose</span>=<span class="number">1</span> <span class="comment">"在一个tag上按回车后，自动跳转到tag在文件的位置，并关闭tagbar</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p><code>!</code>上面配置中全局.ycm_extra_conf.py路径很重要，如果不配置将无法解析C/C++头文件</p>
+</blockquote>
+<p>.ycm_extra_conf.py 模版位于YouCompleteMe/third_party/ycmd/cpp/ycm/，其中-isystem flag用来配置系统头文件路径，-I用来配置第三方头文件路径, 一个支持C/C++工程的ycm_extra_conf.py部分配置文件修改添加如下：<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'-std=c++11'</span>,</span><br><span class="line">#<span class="string">'-std=c99'</span>,</span><br><span class="line"># ...<span class="built_in">and</span> the same thing goes <span class="keyword">for</span> the magic -<span class="keyword">x</span> option which specifies the</span><br><span class="line"># <span class="keyword">language</span> that the <span class="keyword">files</span> <span class="keyword">to</span> <span class="keyword">be</span> compiled are written in. This <span class="keyword">is</span> mostly</span><br><span class="line"># relevant <span class="keyword">for</span> <span class="keyword">c</span>++ headers.</span><br><span class="line"># For <span class="keyword">a</span> C project, you would <span class="keyword">set</span> this <span class="keyword">to</span> <span class="string">'c'</span> instead of <span class="string">'c++'</span>.</span><br><span class="line"><span class="string">'-x'</span>,</span><br><span class="line"><span class="string">'c++'</span>,</span><br><span class="line"><span class="string">'-isystem'</span>,</span><br><span class="line"><span class="string">'../BoostParts'</span>,</span><br><span class="line">#-isystem: <span class="built_in">system</span> include <span class="keyword">file</span> path按照自己的头文件添加iinclude路径</span><br><span class="line"><span class="string">'-isystem'</span>, <span class="string">'/usr/include'</span>,</span><br><span class="line"><span class="string">'-isystem'</span>, <span class="string">'/usr/local/include'</span>,</span><br><span class="line"><span class="string">'-isystem'</span>, <span class="string">'/usr/include/c++/4.8.4'</span>,</span><br><span class="line"><span class="string">'-isystem'</span>,<span class="string">'/usr/include/x86_64-linux-gnu/c++'</span>,</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>2.2 基于vundle安装<br><a href="https://www.cnblogs.com/274914765qq/p/4439189.html" target="_blank" rel="external">参考网址</a><br>使用vundle进行安装，在<code>.vimrc</code>中添加如下代码<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Bundle 'Valloric/YouCompleteMe'   <span class="string">"或直接在vim ：中输入 Bundle 'Valloric/YouCompleteMe'</span></span><br></pre></td></tr></table></figure></p>
+<p>保存退出后打开vim，在正常模式下输入<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleInstall</span></span><br></pre></td></tr></table></figure></p>
+<p>等待vundle将YouCompleteMe安装完成，而后需要进行编译安装<br><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~<span class="string">/.vim/bundle/YouCompleteMe</span></span><br><span class="line"><span class="string">./install.sh</span> <span class="params">--clang-completer</span></span><br></pre></td></tr></table></figure></p>
+<p>在.vimrc中对YouCompleteMe的配置如下<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" YouCompleteMe配置</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:ycm_error_symbol</span> = <span class="string">'&gt;&gt;'</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:ycm_warning_symbol</span> = <span class="string">'&gt;*'</span></span><br><span class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;leader&gt;</span>gl :YcmCompleter GoToDeclaration<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;leader&gt;</span>gf :YcmCompleter GoToDefinition<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;leader&gt;</span>gg :YcmCompleter GoToDefinitionElseDeclaration<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;F4&gt;</span> :YcmDiags<span class="symbol">&lt;CR&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>nmap<c-a> :YcmCompleter FixIt<cr>  </cr></c-a></p>
+<h5 id="自动补全法2"><a href="#自动补全法2" class="headerlink" title="自动补全法2"></a>自动补全法2</h5><p>因为安装<code>YouCompleteMe</code>太麻烦了，可能会安装<code>jedi-vim</code>代替;不过推荐使用neocomplete<br>在.vimrc 添加 jedi-vim 和 supertab<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">call</span> vundle#begin()  </span><br><span class="line">...  </span><br><span class="line"> Bundle <span class="string">'davidhalter/jedi-vim'</span>  </span><br><span class="line"> Bundle <span class="string">'ervandew/supertab'</span>  </span><br><span class="line">...  </span><br><span class="line"> <span class="keyword">call</span> vundle#end()            <span class="comment">" required  </span></span><br><span class="line"> <span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span>    <span class="comment">" required</span></span><br></pre></td></tr></table></figure></p>
+<p> 打开 vim 使用 :PluginInstall 命令安装插件<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> ~/.<span class="keyword">vim</span>/bundle/jedi-<span class="keyword">vim</span>/ &amp;&amp; git submodule <span class="keyword">update</span> --init</span><br></pre></td></tr></table></figure></p>
+<p> 在 .vimrc 添加<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> g:<span class="attr">SuperTabDefaultCompletionType</span> = <span class="string">"context"</span>  </span><br><span class="line"><span class="keyword">let</span> g:jedi<span class="comment">#popup_on_dot = 0</span></span><br></pre></td></tr></table></figure></p>
+<p><strong><code>neocomplete安装</code></strong><br> <code>$vim --version</code>  查看是否有 +lua ,没有则需要 sudo apt-get install lua-devel 再重新安装vim</p>
+<blockquote>
+<p> <a href="https://github.com/Shougo/neocomplete.vim]" target="_blank" rel="external">下载网址</a><br>   拷贝到～/.vim<br>   .vimrc添加  let g:neocomplcache_enable_at_startup = 1</p>
+</blockquote>
+<p>  官网的Configuration Examples可以用</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ol>
+<li>YouCompleteMe unavailable : requires Vim 7.4.143<br>vim 版本不够新需要升级<br>查看下vim版本<code>$vim --version</code><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> add-apt-repository </span>ppa:jonathonf/vim </span><br><span class="line">sudo apt update </span><br><span class="line">sudo apt install vim </span><br><span class="line"><span class="comment">#or</span></span><br><span class="line">sudo<span class="built_in"> add-apt-repository </span>ppa:jonathonf/vim</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果还不行，进行如下操作：sudo apt-get -u dist-upgrade（强制更新软件包到最新版本，并自动解决缺少的依赖包） ，问题解决。在不行就下载vim源码安装</p>
+<ol>
+<li>ctags not found</li>
+</ol>
+<p>在安装spf13集合包时，个人的ubuntu 系统并没有安装ctags，造成Tagbar插件未能成功安装。<br>所以在安装好ctags后，重新运行 BundleInstall，此时Tagbar插件才真正落户安家，发挥作用。</p>
+<ol>
+<li><p>vim 有些卡<br>vim -f<br>gvim -f</p>
+<h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p><a href="http://conglang.github.io/2015/04/06/spf13-vim-cheat-sheet/" target="_blank" rel="external">参考网址</a></p>
+</li>
+<li><p>NERDTree</p>
+</li>
+</ol>
+<p>NERDTree 是一个文件浏览器。<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+<span class="keyword">e</span>	打开/关闭NERDTree   或 <span class="symbol">&lt;Leader&gt;</span><span class="keyword">e</span>方式     ,<span class="keyword">e</span></span><br><span class="line">?	显示快速帮助</span><br><span class="line"><span class="keyword">o</span>或Ctrl+R	打开文件、目录和书签</span><br><span class="line"><span class="keyword">go</span>	打开选中文件，不过光标仍在NERDTree中</span><br><span class="line">t	在新<span class="keyword">tab</span>中打开选中节点/书签</span><br><span class="line">T	功能与t相同，不过焦点仍在当前<span class="keyword">tab</span></span><br><span class="line">i	在新<span class="keyword">split</span>打开选中文件</span><br><span class="line">gi	与i相同，不过光标仍在NERDTree中</span><br><span class="line">s	在新<span class="keyword">vsplit</span>中打开选中文件</span><br><span class="line">gs	与s相同，不过光标仍在NERDTree中</span><br><span class="line">O	打开选中目录所有子目录</span><br><span class="line"><span class="keyword">x</span>	关闭当前节点父节点</span><br><span class="line"><span class="keyword">X</span>	关闭当前节点所有子节点</span><br><span class="line">D	删除当前书签</span><br><span class="line"><span class="keyword">P</span>	跳到根节点</span><br><span class="line"><span class="keyword">p</span>	跳到当前节点父节点</span><br><span class="line">K	跳到本层级第一个节点</span><br><span class="line">J	跳到本层级最后一个节点</span><br><span class="line">C	设置选中目录为根结点</span><br><span class="line"><span class="keyword">u</span>	根结点向上跳出一级</span><br><span class="line">U	与<span class="keyword">u</span>相同，只是老根结点保持打开</span><br><span class="line">r	刷新当前目录所有子目录</span><br><span class="line">R	刷新当前根目录所有子目录</span><br><span class="line"><span class="keyword">m</span>	显示NERDTree的菜单</span><br><span class="line"><span class="keyword">cd</span>	将当前工作目录改为选中节点</span><br><span class="line">CD	将根结点改为当前工作目录</span><br><span class="line"><span class="keyword">f</span>	切换是否打开文件过滤</span><br><span class="line">F	切换是否显示文件</span><br><span class="line">B	切换书签列表是否显示</span><br><span class="line">A	最大最小化NERDTree窗口</span><br><span class="line">:<span class="keyword">help</span> NERDTree	NERDTree帮助手册</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><p>EasyMotion<br>快速行跳转<br>快速字跳转</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">,,w	当前光标后的所有word，提供快捷键跳转</span><br><span class="line">,,b	当前光标前的所有word，提供快捷键跳转</span><br><span class="line">,,j	当前光标后的所有行，提供快捷键跳转</span><br><span class="line">,,k	当前光标后的所有行，提供快捷键跳转</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ctags<br>实现各种函数/变量跳转至各自声明处。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ctrl+]	当前光标处<span class="built_in">word</span>，跳转至相同名称的函数处或者变量声明处</span><br><span class="line">ctrl+t	跳转的返回</span><br><span class="line">g]	当前光标处<span class="built_in">word</span>，跳转至相同名称的函数处或者变量声明处，不同与ctrl+]，会列出所有相同名称的标签文件</span><br><span class="line"></span><br><span class="line">,tt     打开tagbar界面</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>可手动设置快捷键：<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;F3&gt;</span>   <span class="symbol">&lt;ctrl-T&gt;</span>  </span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;F4&gt;</span>   &lt;ctrl-]&gt;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>tagbar 设置<br>   F6进入，上下移动 (jk), 选中回车后会跳转。通过 help:tagbar 可以查看tagbar的说明文档<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">" tagbar</span></span><br><span class="line"><span class="comment">"Bundle 'majutsushi/tagbar'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;F6&gt;</span> :TagbarToggle<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="comment">" tagbar默认去这个目录中寻找ctags，ctags的默认安装路径也是这个目录</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:tagbar_autoclose</span>=<span class="number">1</span> <span class="comment">"在一个tag上按回车后，自动跳转到tag在文件的位置，并关闭tagbar</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:tagbar_ctags_bin</span>=<span class="string">'/usr/bin/ctags'</span>  <span class="comment">" Proper Ctags locations</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:tagbar_width</span>=<span class="number">26</span>                      <span class="comment">" Default is 40, seems too wide</span></span><br><span class="line"><span class="keyword">noremap</span> <span class="symbol">&lt;Leader&gt;</span><span class="keyword">y</span> :TagbarToggle<span class="symbol">&lt;CR&gt;</span>        <span class="comment">" Display panel with (,y)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" 启动 时自动focus</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:tagbar_autofocus</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">" for ruby, delete if you do not need</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">g:tagbar_type_ruby</span> = &#123;</span><br><span class="line">    \ <span class="string">'kinds'</span> : [</span><br><span class="line">        \ <span class="string">'m:modules'</span>,</span><br><span class="line">        \ <span class="string">'c:classes'</span>,</span><br><span class="line">        \ <span class="string">'d:describes'</span>,</span><br><span class="line">        \ <span class="string">'C:contexts'</span>,</span><br><span class="line">        \ <span class="string">'f:methods'</span>,</span><br><span class="line">        \ <span class="string">'F:singleton methods'</span></span><br><span class="line">    \ ]</span><br><span class="line">\ &#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ol>
+<li>NERDCommenter注释工具<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">,<span class="keyword">c</span><span class="symbol">&lt;Space&gt;</span>	切换当前行或选中内容是否注释，根据首行判断</span><br><span class="line">,ci	切换当前行或选中内容是否注释，每行自己判断</span><br><span class="line">,<span class="keyword">cs</span>	有格式地注释</span><br><span class="line">,cy	复制内容，然后注释</span><br><span class="line">,<span class="keyword">ca</span>	在行末添加注释符并进入<span class="keyword">insert</span> <span class="keyword">mode</span></span><br><span class="line">,<span class="keyword">cl</span>	在行首添加注释符并进入<span class="keyword">insert</span> <span class="keyword">mode</span></span><br><span class="line">,<span class="keyword">ca</span>	在两种注释符之间切换，如/**/和//</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果觉得不错,鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="keetsky 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="keetsky 比特币"/>
+        <p>比特币</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/VIM/" rel="tag"><i class="fa fa-tag"></i> VIM</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div style="color: #2196F3; font-size:13px; letter-spacing:3px;">看完记得五星好评哦亲～</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+	
+	  <div class="post-nav">
+	    <div class="post-nav-next post-nav-item">
+	      
+		<a href="/2018/02/10/yolo训练自己的样本库/" rel="prev" title="yolo训练自己的样本库">
+		  <i class="fa fa-chevron-left"></i> yolo训练自己的样本库
+		</a>
+	      
+	    </div>
+	    <span class="post-nav-divider"></span>
+	    <div class="post-nav-prev post-nav-item">
+	      
+		<a href="/2018/02/10/CMakeLists 生成动态库与静态库/" rel="next" title="CMakeLists 生成动态库与静态库">
+		  CMakeLists 生成动态库与静态库 <i class="fa fa-chevron-right"></i>
+		</a>
+	      
+	    </div>
+	  </div>
+	
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!--MOB SHARE BEGIN-->
+<div class="-hoofoo-share-title">分享到：</div>
+<div class="-hoofoo-share-buttons">
+    <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button"><i class="fa fa-weibo" aria-hidden="true"></i></div>
+    <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button"><i class="fa fa-weixin" aria-hidden="true"></i></div>
+    <div class="-mob-share-qq -hoofoo-share-qq -hoofoo-share-ui-button"><i class="fa fa-qq" aria-hidden="true"></i></div>
+    <div class="-mob-share-twitter -hoofoo-share-twitter -hoofoo-share-ui-button"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+    <div class="-hoofoo-share-more -hoofoo-share-ui-button -mob-share-open"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-weixin"><p>微信</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+        <li class="-mob-share-renren"><p>人人网</p></li>
+        <li class="-mob-share-kaixin"><p>开心网</p></li>
+        <li class="-mob-share-douban"><p>豆瓣</p></li>
+        <li class="-mob-share-youdao"><p>有道云笔记</p></li>
+        <li class="-mob-share-mingdao"><p>明道</p></li>
+        <li class="-mob-share-pengyou"><p>朋友网</p></li>
+        <li class="-mob-share-facebook"><p>Facebook</p></li>
+        <li class="-mob-share-twitter"><p>Twitter</p></li>
+        <li class="-mob-share-pocket"><p>Pocket</p></li>
+        <li class="-mob-share-google"><p>Google+</p></li>
+        <li class="-mob-share-tumblr"><p>Tumblr</p></li>
+        <li class="-mob-share-instapaper"><p>Instapaper</p></li>
+        <li class="-mob-share-linkedin"><p>Linkedin</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=224a708d42c26"></script>
+<!--MOB SHARE END-->
+
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/dd.jpeg"
+                alt="keetsky" />
+            
+              <p class="site-author-name" itemprop="name">keetsky</p>
+              <p class="site-description motion-element" itemprop="description">登高望远，多少岁月烟雨中;贴窗倾听，夜雨声烦杯对影。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/keetsky" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:keetsky@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/keetsky" target="_blank" title="Google">
+                    
+                      <i class="fa fa-fw fa-google"></i>Google</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://youtube.com/keetsky" target="_blank" title="YouTube">
+                    
+                      <i class="fa fa-fw fa-youtube"></i>YouTube</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/huo-du-fa-shi/activities" target="_blank" title="知乎">
+                    
+                      <i class="fa fa-fw fa-address-book"></i>知乎</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.baidu.com/" title="百度" target="_blank">百度</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("11/10/2017 15:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#图省事的配置"><span class="nav-number">1.</span> <span class="nav-text">图省事的配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#经典配置"><span class="nav-number">2.</span> <span class="nav-text">经典配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#自动补全法2"><span class="nav-number">2.1.</span> <span class="nav-text">自动补全法2</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">3.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快捷键"><span class="nav-number">4.</span> <span class="nav-text">快捷键</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">keetsky</span>
+
+  
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+</div>
+
+
+  <div class="powered-by"> Personal Site</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Blog - keetsky  </div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://NaNsay.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2018/02/10/Vim终极配置/';
+          this.page.identifier = '2018/02/10/Vim终极配置/';
+          this.page.title = 'Vim终极配置';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://NaNsay.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: '21081197',
+            repo: 'keetsky.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'f2234912c1df1bc364f3ce39bccb5c6a73d51ab4',
+            
+                client_id: '3e0d530e7bfe6bd12b78'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 8002,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+<script type="text/javascript">
+    //微信二维码点击背景关闭
+    $('body').delegate('.-mob-share-weixin-qrcode-bg','click', function(){
+         $(".-mob-share-weixin-qrcode-close").trigger("click");
+    }); 
+</script>
+
+
+
+
+  
+</body>
+</html>
