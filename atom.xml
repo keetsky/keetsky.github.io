@@ -5,9 +5,9 @@
   <subtitle>Life Never Stop</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://keetsky.top/"/>
   <updated>2022-09-11T09:06:39.049Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://keetsky.top/</id>
   
   <author>
     <name>keetsky</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>yolo训练自己的样本库</title>
-    <link href="http://yoursite.com/2018/02/10/yolo%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A0%B7%E6%9C%AC%E5%BA%93/"/>
-    <id>http://yoursite.com/2018/02/10/yolo训练自己的样本库/</id>
+    <link href="http://keetsky.top/2018/02/10/yolo%E8%AE%AD%E7%BB%83%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A0%B7%E6%9C%AC%E5%BA%93/"/>
+    <id>http://keetsky.top/2018/02/10/yolo训练自己的样本库/</id>
     <published>2018-02-10T12:04:19.000Z</published>
     <updated>2022-09-11T09:06:39.049Z</updated>
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="DeepLearning" scheme="http://yoursite.com/categories/DeepLearning/"/>
+      <category term="DeepLearning" scheme="http://keetsky.top/categories/DeepLearning/"/>
     
     
-      <category term="yolo" scheme="http://yoursite.com/tags/yolo/"/>
+      <category term="yolo" scheme="http://keetsky.top/tags/yolo/"/>
     
   </entry>
   
   <entry>
     <title>Vim终极配置</title>
-    <link href="http://yoursite.com/2018/02/10/Vim%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2018/02/10/Vim终极配置/</id>
+    <link href="http://keetsky.top/2018/02/10/Vim%E7%BB%88%E6%9E%81%E9%85%8D%E7%BD%AE/"/>
+    <id>http://keetsky.top/2018/02/10/Vim终极配置/</id>
     <published>2018-02-10T12:03:19.000Z</published>
     <updated>2018-02-10T05:51:04.338Z</updated>
     
@@ -60,17 +60,17 @@
     
     </summary>
     
-      <category term="ubuntu" scheme="http://yoursite.com/categories/ubuntu/"/>
+      <category term="ubuntu" scheme="http://keetsky.top/categories/ubuntu/"/>
     
     
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+      <category term="VIM" scheme="http://keetsky.top/tags/VIM/"/>
     
   </entry>
   
   <entry>
     <title>CMakeLists 生成动态库与静态库</title>
-    <link href="http://yoursite.com/2018/02/10/CMakeLists%20%E7%94%9F%E6%88%90%E5%8A%A8%E6%80%81%E5%BA%93%E4%B8%8E%E9%9D%99%E6%80%81%E5%BA%93/"/>
-    <id>http://yoursite.com/2018/02/10/CMakeLists 生成动态库与静态库/</id>
+    <link href="http://keetsky.top/2018/02/10/CMakeLists%20%E7%94%9F%E6%88%90%E5%8A%A8%E6%80%81%E5%BA%93%E4%B8%8E%E9%9D%99%E6%80%81%E5%BA%93/"/>
+    <id>http://keetsky.top/2018/02/10/CMakeLists 生成动态库与静态库/</id>
     <published>2018-02-10T12:02:19.000Z</published>
     <updated>2018-02-10T05:40:50.254Z</updated>
     
@@ -85,17 +85,17 @@
     
     </summary>
     
-      <category term="ubuntu" scheme="http://yoursite.com/categories/ubuntu/"/>
+      <category term="ubuntu" scheme="http://keetsky.top/categories/ubuntu/"/>
     
     
-      <category term="CMake" scheme="http://yoursite.com/tags/CMake/"/>
+      <category term="CMake" scheme="http://keetsky.top/tags/CMake/"/>
     
   </entry>
   
   <entry>
     <title>PX4 安装与配置</title>
-    <link href="http://yoursite.com/2018/02/09/PX4-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2018/02/09/PX4-安装与配置/</id>
+    <link href="http://keetsky.top/2018/02/09/PX4-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://keetsky.top/2018/02/09/PX4-安装与配置/</id>
     <published>2018-02-09T12:02:19.000Z</published>
     <updated>2018-02-09T12:04:29.436Z</updated>
     
@@ -111,17 +111,17 @@
     
     </summary>
     
-      <category term="ubuntu" scheme="http://yoursite.com/categories/ubuntu/"/>
+      <category term="ubuntu" scheme="http://keetsky.top/categories/ubuntu/"/>
     
     
-      <category term="px4" scheme="http://yoursite.com/tags/px4/"/>
+      <category term="px4" scheme="http://keetsky.top/tags/px4/"/>
     
   </entry>
   
   <entry>
     <title>测试</title>
-    <link href="http://yoursite.com/2018/02/06/test/"/>
-    <id>http://yoursite.com/2018/02/06/test/</id>
+    <link href="http://keetsky.top/2018/02/06/test/"/>
+    <id>http://keetsky.top/2018/02/06/test/</id>
     <published>2018-02-06T12:03:19.000Z</published>
     <updated>2022-09-11T08:30:25.239Z</updated>
     
@@ -133,19 +133,19 @@
     
     </summary>
     
-      <category term="搭建博客" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="搭建博客" scheme="http://keetsky.top/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="MD技巧" scheme="http://yoursite.com/tags/MD%E6%8A%80%E5%B7%A7/"/>
+      <category term="MD技巧" scheme="http://keetsky.top/tags/MD%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="http://keetsky.top/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>Hello World2</title>
-    <link href="http://yoursite.com/2018/02/03/hello-world2/"/>
-    <id>http://yoursite.com/2018/02/03/hello-world2/</id>
+    <link href="http://keetsky.top/2018/02/03/hello-world2/"/>
+    <id>http://keetsky.top/2018/02/03/hello-world2/</id>
     <published>2018-02-03T12:02:19.000Z</published>
     <updated>2022-09-11T08:55:18.764Z</updated>
     
@@ -160,19 +160,19 @@
     
     </summary>
     
-      <category term="搭建博客" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="搭建博客" scheme="http://keetsky.top/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="MD技巧" scheme="http://yoursite.com/tags/MD%E6%8A%80%E5%B7%A7/"/>
+      <category term="MD技巧" scheme="http://keetsky.top/tags/MD%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="http://keetsky.top/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/02/02/hello-world/"/>
-    <id>http://yoursite.com/2018/02/02/hello-world/</id>
+    <link href="http://keetsky.top/2018/02/02/hello-world/"/>
+    <id>http://keetsky.top/2018/02/02/hello-world/</id>
     <published>2018-02-02T12:02:29.000Z</published>
     <updated>2022-09-11T08:55:40.293Z</updated>
     
@@ -187,19 +187,19 @@
     
     </summary>
     
-      <category term="搭建博客" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="搭建博客" scheme="http://keetsky.top/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="MD技巧" scheme="http://yoursite.com/tags/MD%E6%8A%80%E5%B7%A7/"/>
+      <category term="MD技巧" scheme="http://keetsky.top/tags/MD%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="http://keetsky.top/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>test2</title>
-    <link href="http://yoursite.com/2017/11/10/test2/"/>
-    <id>http://yoursite.com/2017/11/10/test2/</id>
+    <link href="http://keetsky.top/2017/11/10/test2/"/>
+    <id>http://keetsky.top/2017/11/10/test2/</id>
     <published>2017-11-10T13:55:24.000Z</published>
     <updated>2022-09-11T07:58:32.668Z</updated>
     
@@ -216,12 +216,12 @@
     
     </summary>
     
-      <category term="很通" scheme="http://yoursite.com/categories/%E5%BE%88%E9%80%9A/"/>
+      <category term="很通" scheme="http://keetsky.top/categories/%E5%BE%88%E9%80%9A/"/>
     
     
-      <category term="它不是人" scheme="http://yoursite.com/tags/%E5%AE%83%E4%B8%8D%E6%98%AF%E4%BA%BA/"/>
+      <category term="它不是人" scheme="http://keetsky.top/tags/%E5%AE%83%E4%B8%8D%E6%98%AF%E4%BA%BA/"/>
     
-      <category term="她是人" scheme="http://yoursite.com/tags/%E5%A5%B9%E6%98%AF%E4%BA%BA/"/>
+      <category term="她是人" scheme="http://keetsky.top/tags/%E5%A5%B9%E6%98%AF%E4%BA%BA/"/>
     
   </entry>
   
